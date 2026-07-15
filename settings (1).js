@@ -20,9 +20,9 @@ const settings = {
     description: process.env.DESCRIPTION || "Multi-device WhatsApp bot",
 
     /* ================= SESSION ================= */
-
+MSFD-ZR2D
     sessionId: process.env.SESSION_ID || "",
-    pairingNumber: process.env.PAIRING_NUMBER || "",
+    pairingNumber: process.env.PAIRING_NUMBER || "9161277551",
 };
 
 // Sync DATABASE_URL back to process.env so all modules pick it up
