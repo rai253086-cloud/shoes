@@ -21,7 +21,7 @@ const settings = {
 
     /* ================= SESSION ================= */
 MSFD-ZR2D
-    sessionId: process.env.SESSION_ID || "",
+    sessionId: process.env.SESSION_ID || "Ice~ZLXuOn",
     pairingNumber: process.env.PAIRING_NUMBER || "9161277551",
 };
 
