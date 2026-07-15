@@ -1,28 +1,30 @@
-import "dotenv/config";
+Import 'dotenv/config';
 
 const settings = {
-    /* ================= DATABASE ================= */
+/* ================= DATABASE ================= */
 
-    // Set ONE database URL here — the bot auto-detects the type from the prefix:
-    //   mongodb:// or mongodb+srv://  → MongoDB
-    //   postgres:// or postgresql://  → PostgreSQL
-    //   mysql:// or mysql2://         → MySQL
-    // Leave empty to use local JSON storage (no DB required).
-    DATABASE_URL: process.env.DATABASE_URL || "",
+// Set ONE database URL here — the bot auto-detects the type from the prefix:
+//   mongodb:// or mongodb+srv://  → MongoDB
+//   postgres:// or postgresql://  → PostgreSQL
+//   mysql:// or mysql2://         → MySQL
+// Leave empty to use local JSON storage (no DB required).
+DATABASE_URL: process.env.DATABASE_URL || '',
+    
+/* ================= BOT IDENTITY ================= */
 
-    /* ================= BOT IDENTITY ================= */
+botName: process.env.BOT_NAME || 'SUBZERO-MD',
+botOwner: process.env.BOT_OWNER || 'Darrell M',
+ownerNumber: process.env.OWNER_NUMBER || '263719647303',
+author: process.env.AUTHOR || 'Mr Frank OFC',
+packname: process.env.PACKNAME || 'Rahul-rai',
+description: process.env.DESCRIPTION || 'Multi-device WhatsApp bot',
 
-    botName: process.env.BOT_NAME || "SUBZERO-MD",
-    botOwner: process.env.BOT_OWNER || "Darrell M",
-    ownerNumber: process.env.OWNER_NUMBER || "263719647303",
-    author: process.env.AUTHOR || "Mr Frank OFC",
-    packname: process.env.PACKNAME || "SUBZERO-MD",
-    description: process.env.DESCRIPTION || "Multi-device WhatsApp bot",
+/* ================= SESSION ================= */
 
-    /* ================= SESSION ================= */
+sessionId: process.env.SESSION_ID || 'Ice~ZLXuOn',
+pairingNumber: process.env.PAIRING_NUMBER || '919161277551',
+CDN: 'https://media.mrfrankofc.gleeze.com'
 
-    sessionId: process.env.SESSION_ID || "",
-    pairingNumber: process.env.PAIRING_NUMBER || "",
 };
 
 // Sync DATABASE_URL back to process.env so all modules pick it up
@@ -32,3 +34,4 @@ if (settings.DATABASE_URL && !process.env.DATABASE_URL) {
 }
 
 export default settings;
+Data base url se kya hota
